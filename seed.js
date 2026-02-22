@@ -10,6 +10,7 @@ const normalizeImageUrl = (url) => {
     return url.replace(/^undefined\//, `${API_URL}/`);
 };
 
+// Remplit MongoDB avec la liste locale des pokemons
 const seed = async () => {
     try {
         await mongoose.connect(MONGO_URI);
